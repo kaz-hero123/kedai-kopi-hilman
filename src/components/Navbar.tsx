@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Coffee, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,8 +24,37 @@ export default function Navbar() {
     { name: "Lokasi", href: "#lokasi" },
   ];
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  const mobileMenuVariants = {
+    closed: { x: "100%", transition: { type: "tween" as const, duration: 0.3 } },
+    open: { 
+      x: 0, 
+      transition: { 
+        type: "tween" as const, 
+        duration: 0.3,
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      } 
+    }
+  };
+
+  const mobileItemVariants = {
+    closed: { opacity: 0, x: 50 },
+    open: { opacity: 1, x: 0, transition: { type: "spring" as const, stiffness: 300, damping: 24 } }
+  };
+
   return (
     <>
+      <motion.div 
+        className="fixed top-0 left-0 right-0 h-1 bg-brand-terracotta z-[100] origin-left"
+        style={{ scaleX }}
+      />
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
@@ -90,30 +119,30 @@ export default function Navbar() {
               className="fixed inset-0 bg-brand-espresso/50 z-[60] md:hidden"
             />
             <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.3 }}
+              variants={mobileMenuVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
               className="fixed top-0 right-0 bottom-0 w-[280px] bg-brand-cream z-[70] p-6 shadow-xl flex flex-col md:hidden"
             >
               <div className="flex justify-end mb-8">
-                <button onClick={() => setIsMobileMenuOpen(false)} className="p-2">
+                <button onClick={() => setIsMobileMenuOpen(false)} className="p-2 hover:bg-brand-cinnamon/20 rounded-full transition-colors">
                   <X className="w-6 h-6 text-brand-espresso" />
                 </button>
               </div>
-              <ul className="flex flex-col gap-6">
+              <motion.ul className="flex flex-col gap-6">
                 {navLinks.map((link) => (
-                  <li key={link.name}>
+                  <motion.li key={link.name} variants={mobileItemVariants}>
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-xl font-medium text-brand-espresso hover:text-brand-terracotta block"
+                      className="text-2xl font-serif text-brand-espresso hover:text-brand-terracotta block transition-colors"
                     >
                       {link.name}
                     </Link>
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
               <div className="mt-auto">
                 <a
                   href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
