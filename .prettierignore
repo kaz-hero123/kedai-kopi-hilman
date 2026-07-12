@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Build output
+.next
+out
+build
+
+# Misc
+*.md
+package-lock.json
