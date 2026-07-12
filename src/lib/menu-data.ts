@@ -5,6 +5,7 @@ export type MenuItem = {
   description: string;
   category: "minuman" | "camilan";
   image: string;
+  isBestSeller?: boolean;
 };
 
 export const menuData: MenuItem[] = [
@@ -15,6 +16,7 @@ export const menuData: MenuItem[] = [
     description: "Espresso, susu segar, gula aren asli — manis natural",
     category: "minuman",
     image: "/images/menu-1.webp",
+    isBestSeller: true,
   },
   {
     id: "m2",
@@ -39,6 +41,7 @@ export const menuData: MenuItem[] = [
     description: "Roti panggang renyah, cokelat leleh + keju gurih",
     category: "camilan",
     image: "/images/menu-1.webp",
+    isBestSeller: true,
   },
   {
     id: "c2",
