@@ -9,8 +9,35 @@
   
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-dm-serif), ui-serif, Georgia, serif;
+  
+  /* Fluid Typography (clamp) */
+  --text-fluid-h1: clamp(3rem, 5vw + 1rem, 5.5rem);
+  --text-fluid-h2: clamp(2.25rem, 4vw + 1rem, 3.75rem);
+  --text-fluid-h3: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+  --text-fluid-p: clamp(1rem, 1vw + 0.8rem, 1.25rem);
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Custom Scrollbar Properties (Firefox) */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-terracotta) var(--color-brand-espresso);
+}
+
+/* Custom Scrollbar (WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-espresso);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-terracotta);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3482e; /* slightly darker terracotta */
+}
 
 .bg-grain {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
