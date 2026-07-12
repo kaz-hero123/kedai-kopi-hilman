@@ -14,7 +14,7 @@ export default function CtaWhatsApp() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-serif text-3xl md:text-5xl text-white font-bold mb-6"
+          className="font-serif text-[var(--text-fluid-h2)] text-white font-bold mb-6 tracking-tight drop-shadow-md"
         >
           Mau pesan atau reservasi tempat?
         </motion.h2>
@@ -24,7 +24,7 @@ export default function CtaWhatsApp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-white/90 text-lg md:text-xl mb-10 max-w-2xl mx-auto"
+          className="text-white/90 text-lg md:text-xl mb-12 max-w-2xl mx-auto drop-shadow-sm font-medium"
         >
           Langsung chat kami, ya! Kami fast respond dan siap menyiapkan secangkir kopi terbaik untukmu.
         </motion.p>
@@ -34,12 +34,16 @@ export default function CtaWhatsApp() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
+          className="relative inline-block group"
         >
+          {/* Glowing Border Animation */}
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-brand-cream via-brand-cinnamon to-brand-cream opacity-50 blur-md group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+          
           <a
             href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 bg-brand-cream text-brand-espresso px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="relative inline-flex items-center justify-center gap-3 bg-brand-cream text-brand-espresso px-10 py-5 rounded-full font-bold text-lg hover:bg-white transition-all shadow-xl hover:-translate-y-1"
           >
             <MessageCircle className="w-6 h-6 text-green-600" />
             <span>Chat via WhatsApp</span>
