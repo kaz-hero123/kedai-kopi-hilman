@@ -87,7 +87,7 @@ export default function Navbar() {
               ))}
             </ul>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
+              href="https://wa.me/6281122334455?text=Halo%20min,%20mau%20tanya%20soal%20Ruang%20Kopi."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-terracotta text-white px-5 py-2.5 rounded-full font-medium hover:bg-brand-terracotta/90 transition-colors shadow-sm"
@@ -145,7 +145,7 @@ export default function Navbar() {
               </motion.ul>
               <div className="mt-auto">
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
+                  href="https://wa.me/6281122334455?text=Halo%20min,%20mau%20tanya%20soal%20Ruang%20Kopi."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-terracotta text-white px-6 py-3 rounded-full font-medium w-full flex justify-center hover:bg-brand-terracotta/90 transition-colors shadow-sm"

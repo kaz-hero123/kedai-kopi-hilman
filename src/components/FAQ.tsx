@@ -7,7 +7,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     question: "Apakah Ruang Kopi menyediakan Wi-Fi gratis?",
-    answer: "Ya, kami menyediakan Wi-Fi berkecepatan tinggi gratis untuk semua pelanggan. Sangat cocok untuk kamu yang ingin WFC (Work From Cafe) atau sekadar browsing santai."
+    answer: "Ya, kami menyediakan Wi-Fi berkecepatan tinggi gratis untuk semua pelanggan. Sangat cocok untuk kamu yang ingin nugas atau kerja."
   },
   {
     question: "Apakah tersedia area parkir untuk mobil?",

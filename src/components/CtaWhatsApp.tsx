@@ -40,7 +40,7 @@ export default function CtaWhatsApp() {
           <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-brand-cream via-brand-cinnamon to-brand-cream opacity-50 blur-md group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
           
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
+            href="https://wa.me/6281122334455?text=Halo%20min,%20saya%20tertarik%20dengan%20Ruang%20Kopi!"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center gap-3 bg-brand-cream text-brand-espresso px-10 py-5 rounded-full font-bold text-lg hover:bg-white transition-all shadow-xl hover:-translate-y-1"

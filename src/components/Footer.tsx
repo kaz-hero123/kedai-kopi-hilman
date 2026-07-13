@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-brand-cream/70 leading-relaxed max-w-sm mb-6">
-              Tempat singgah sejenak dari hiruk-pikuk hari. Menyeduh kopi lokal dengan cinta untuk tetangga sekitar.
+              Kopi enak dengan harga bersahabat. Buka setiap hari untuk menemani waktu santaimu.
             </p>
             <form className="relative max-w-sm" onSubmit={(e) => e.preventDefault()}>
               <input 
@@ -51,8 +51,8 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="text-brand-cream/70">
                 <span className="block text-white mb-1">WhatsApp</span>
-                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-brand-terracotta transition-colors">
-                  0812-3456-7890
+                <a href="https://wa.me/6281122334455" target="_blank" rel="noopener noreferrer" className="hover:text-brand-terracotta transition-colors">
+                  0811-2233-4455
                 </a>
               </li>
               <li className="text-brand-cream/70">
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-brand-cream/10 flex flex-col md:flex-row items-center justify-between gap-4 text-brand-cream/50 text-sm">
-          <p>&copy; {currentYear} Ruang Kopi. Dibuat dengan ☕ dan ❤️.</p>
+          <p>&copy; {currentYear} Ruang Kopi. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
             <a href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</a>

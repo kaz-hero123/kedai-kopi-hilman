@@ -8,13 +8,12 @@ export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Disable scroll while splashing
     document.body.style.overflow = "hidden";
     
     const timer = setTimeout(() => {
       setIsVisible(false);
-      document.body.style.overflow = "";
-    }, 2000); // 2 seconds splash
+      document.body.style.overflow = "auto";
+    }, 2000);
     
     return () => {
       clearTimeout(timer);

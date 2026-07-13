@@ -46,7 +46,7 @@ export default function About() {
                 />
               </div>
 
-              {/* Spinning Decorative Badge */}
+
               <motion.div 
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -85,7 +85,7 @@ export default function About() {
               variants={itemVariants}
               className="text-brand-espresso/80 text-[var(--text-fluid-p)] mb-8 leading-relaxed font-medium"
             >
-              Ruang Kopi lahir dari kecintaan sederhana: secangkir kopi yang enak dan obrolan hangat bersama tetangga. Kami percaya bahwa kedai kopi bukan sekadar tempat membeli kafein, tapi sebuah ruang persinggahan. Tempat di mana setiap sapaan terasa personal dan setiap tegukan mengingatkanmu pada kenyamanan rumah.
+              Ruang Kopi dibangun dengan visi sederhana: menyajikan kopi berkualitas yang bisa dinikmati siapa saja. Kami bangga menggunakan biji kopi lokal Nusantara yang disangrai dengan cermat untuk menjaga kesegarannya.
             </motion.p>
 
             <div className="flex flex-col gap-6 mt-4">

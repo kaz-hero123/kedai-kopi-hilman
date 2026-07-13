@@ -15,7 +15,7 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
-  // Text Reveal Variants
+
   const sentence = {
     hidden: { opacity: 1 },
     visible: {
@@ -97,7 +97,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
           className="text-brand-cream/90 text-[var(--text-fluid-p)] max-w-2xl mb-12 drop-shadow-sm font-medium"
         >
-          Kopi lokal pilihan, diseduh dengan cinta di sudut kotamu. Tempat singgah sejenak dari hiruk-pikuk hari.
+          Kopi lokal pilihan yang diseduh fresh setiap hari. Tempat nongkrong nyaman dengan WiFi kencang dan harga bersahabat.
         </motion.p>
 
         <motion.div
@@ -108,7 +108,7 @@ export default function Hero() {
         >
           <MagneticButton>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi!"
+              href="https://wa.me/6281122334455?text=Halo%20min,%20mau%20pesan%20menu%20Ruang%20Kopi."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-terracotta text-white px-8 py-4 rounded-full font-bold hover:bg-brand-terracotta/90 transition-all shadow-[0_0_20px_rgba(198,93,62,0.4)] hover:shadow-[0_0_30px_rgba(198,93,62,0.6)] w-full sm:w-auto flex items-center justify-center gap-2 group border border-brand-terracotta"

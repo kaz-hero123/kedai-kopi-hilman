@@ -53,7 +53,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
             <Star className="w-3 h-3 fill-white" />
             <span>Best Seller</span>
           </div>
-          {/* Ribbon fold effect */}
+
           <div className="absolute -bottom-2 right-0 w-2 h-2 bg-[#8c3e27] rounded-bl-sm"></div>
         </div>
       )}

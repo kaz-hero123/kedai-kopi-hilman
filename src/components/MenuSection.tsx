@@ -98,7 +98,7 @@ export default function MenuSection() {
 
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/6281234567890?text=Halo%20Ruang%20Kopi,%20saya%20mau%20pesan..."
+            href="https://wa.me/6281122334455?text=Halo%20min,%20saya%20mau%20pesan%20menu..."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-brand-terracotta text-white px-8 py-4 rounded-full font-medium hover:bg-brand-terracotta/90 transition-all shadow-lg hover:shadow-xl group"

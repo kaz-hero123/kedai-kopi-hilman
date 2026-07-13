@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const testimonials = [
-  { name: "Andi S.", text: "Kopi susu gula arennya juara! Suasananya juga enak banget buat nongkrong lama-lama." },
-  { name: "Rina M.", text: "Tempat favorit buat nugas akhir pekan. Wi-Fi kencang dan baristanya ramah banget." },
-  { name: "Budi T.", text: "V60 manual brew-nya sangat pas, beans lokalnya berkualitas. Definitely will come back!" },
-  { name: "Siti F.", text: "Croissant butter dipadukan dengan latte adalah kombo terbaik di sore hari. Nyaman banget tempatnya." },
-  { name: "Fajar K.", text: "Harganya ramah di kantong mahasiswa tapi rasanya nggak kalah sama kedai kopi besar." },
+  { name: "Dimas Aditya", text: "Es Kopi Susu arennya pas, ngga terlalu manis. Tempatnya pewe banget buat ngerjain skripsi berjam-jam." },
+  { name: "Sarah N.", text: "Suka banget sama suasananya! Playlist lagunya asik, wifi stabil, dan baristanya super friendly." },
+  { name: "Reza Pahlevi", text: "Nyobain V60 pakai beans lokal mereka, surprisingly clean dan notes-nya dapet banget. Bakal sering mampir sih ini." },
+  { name: "Nadia Kusuma", text: "Selalu jadi go-to place kalau mau me-time. Pastry-nya fresh, kopinya enak, dan wifinya lumayan ngebut buat WFC." },
+  { name: "Farhan H.", text: "Harganya bener-bener bersahabat di kantong mahasiswa, tapi kualitas kopinya berani diadu sama coffee shop gede." },
 ];
 
 export default function Testimonials() {

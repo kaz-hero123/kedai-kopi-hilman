@@ -57,7 +57,7 @@ export default function LocationHours() {
                   </p>
                   <MagneticButton>
                     <a 
-                      href="https://maps.google.com"
+                      href="https://maps.app.goo.gl/qJzS5ZJ9bA3B"
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-brand-terracotta font-bold hover:bg-brand-terracotta/10 px-4 py-2 rounded-lg transition-colors border border-brand-terracotta/30"
@@ -91,7 +91,7 @@ export default function LocationHours() {
             </div>
 
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.01423405788!2d106.7493649!3d-6.3006411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed27170a4805%3A0x6b29d115be53da72!2sJagakarsa%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7334710182695!2d106.8203598!3d-6.3262483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ede4b162f44b%3A0xc3c5123d90f23027!2sJagakarsa%2C%20Jakarta%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}
